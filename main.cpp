@@ -1,6 +1,6 @@
 #include "Game.hpp"
 // to compile, run the following code
-// gcc sdl2minimal.c -lSDL2 -lSDL2main -o sdl2minimal
+// g++ -o Game main.cpp Game.cpp -lSDL2 -lSDL2main 
 
 Game *game = nullptr;
 
