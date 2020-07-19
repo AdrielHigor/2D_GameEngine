@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\ECS">
+      <UniqueIdentifier>{f8dc76ac-6766-4741-95ad-9456d47d24de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Image Include="assets\knight.png">
@@ -44,6 +47,21 @@
     <ClInclude Include="src\Map.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
+    <ClInclude Include="src\ECS\SpriteComponent.h">
+      <Filter>Arquivos de Cabeçalho\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ECS\Components.h">
+      <Filter>Arquivos de Cabeçalho\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ECS\ECS.h">
+      <Filter>Arquivos de Cabeçalho\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ECS\TransformComponent.h">
+      <Filter>Arquivos de Cabeçalho\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector2D.h">
+      <Filter>Arquivos de Cabeçalho</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Game.cpp">
@@ -60,6 +78,9 @@
     </ClCompile>
     <ClCompile Include="src\Map.cpp">
       <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector2D.cpp">
+      <Filter>Arquivos de Cabeçalho</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

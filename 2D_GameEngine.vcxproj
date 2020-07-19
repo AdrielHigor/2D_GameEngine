@@ -26,10 +26,15 @@
     <Image Include="assets\water.png" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\ECS\Components.h" />
+    <ClInclude Include="src\ECS\ECS.h" />
+    <ClInclude Include="src\ECS\TransformComponent.h" />
+    <ClInclude Include="src\ECS\SpriteComponent.h" />
     <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\GameObject.h" />
     <ClInclude Include="src\Map.h" />
     <ClInclude Include="src\TextureManager.h" />
+    <ClInclude Include="src\Vector2D.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Game.cpp" />
@@ -37,6 +42,7 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Map.cpp" />
     <ClCompile Include="src\TextureManager.cpp" />
+    <ClCompile Include="src\Vector2D.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
