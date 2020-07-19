@@ -4,8 +4,6 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "D:/Downloads/SDL2_image-2.0.5/include/",
-                "D:/Downloads/SDL2-2.0.12/include/"
             ],
             "defines": [
                 "_DEBUG",
