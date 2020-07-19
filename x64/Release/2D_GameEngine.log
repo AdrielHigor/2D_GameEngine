@@ -1,0 +1,8 @@
+﻿  Game.cpp
+d:\projetos\visualstudioprojects\2d_gameengine\src\game.h(3): fatal error C1083: Não é possível abrir arquivo incluir: 'SDL.h': No such file or directory
+  GameObject.cpp
+d:\projetos\visualstudioprojects\2d_gameengine\src\game.h(3): fatal error C1083: Não é possível abrir arquivo incluir: 'SDL.h': No such file or directory
+  main.cpp
+d:\projetos\visualstudioprojects\2d_gameengine\src\game.h(3): fatal error C1083: Não é possível abrir arquivo incluir: 'SDL.h': No such file or directory
+  TextureManager.cpp
+d:\projetos\visualstudioprojects\2d_gameengine\src\game.h(3): fatal error C1083: Não é possível abrir arquivo incluir: 'SDL.h': No such file or directory
