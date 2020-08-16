@@ -1,6 +1,6 @@
 #include "Game.h"
 // to compile, run the following code
-// g++ -o ../teste  main.cpp TextureManager.cpp  Game.cpp GameObject.cpp -lSDL2 -lSDL2main -lSDL2_image
+// g++ -o ../teste  main.cpp TextureManager.cpp Map.cpp Vector2D.cpp Game.cpp GameObject.cpp -lSDL2 -lSDL2main -lSDL2_image
 
 Game *game = nullptr;
 
