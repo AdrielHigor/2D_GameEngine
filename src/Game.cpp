@@ -1,8 +1,8 @@
 #include "Game.h"
 #include "TextureManager.h"
 #include "Map.h"
-
 #include "ECS/Components.h"
+#include "Vector2D.h"
 
 Map* map;
 
@@ -72,6 +72,7 @@ void Game::handleEvents(){
 void Game::update(){
 	manager.update();
 	manager.refresh();
+	player.getComponent<TransformComponent>().position.Add(Vector2D(5, 0));
 }
 
 void Game::render(){
