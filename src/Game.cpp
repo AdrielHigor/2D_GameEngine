@@ -5,10 +5,11 @@
 #include "Vector2D.h"
 
 Map* map;
+Manager manager;
 
 SDL_Renderer* Game::renderer = nullptr;
+SDL_Event Game::event;
 
-Manager manager;
 auto& player(manager.addEntity());
 
 Game::Game(){
@@ -52,10 +53,10 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
 
 	player.addComponent<TransformComponent>();
 	player.addComponent<SpriteComponent>("./assets/knight.png");
+	player.addComponent<KeyboardController>();
 }
 
 void Game::handleEvents(){
-    SDL_Event event;
     SDL_PollEvent(&event);
 
     switch (event.type)
@@ -72,7 +73,6 @@ void Game::handleEvents(){
 void Game::update(){
 	manager.update();
 	manager.refresh();
-	player.getComponent<TransformComponent>().position.Add(Vector2D(5, 0));
 }
 
 void Game::render(){
