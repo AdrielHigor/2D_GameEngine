@@ -1,14 +1,15 @@
 #include "Game.h"
 #include "TextureManager.h"
 #include "Map.h"
-
 #include "ECS/Components.h"
+#include "Vector2D.h"
 
 Map* map;
+Manager manager;
 
 SDL_Renderer* Game::renderer = nullptr;
+SDL_Event Game::event;
 
-Manager manager;
 auto& player(manager.addEntity());
 
 Game::Game(){
@@ -52,10 +53,10 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
 
 	player.addComponent<TransformComponent>();
 	player.addComponent<SpriteComponent>("./assets/knight.png");
+	player.addComponent<KeyboardController>();
 }
 
 void Game::handleEvents(){
-    SDL_Event event;
     SDL_PollEvent(&event);
 
     switch (event.type)

@@ -26,6 +26,7 @@
     <Image Include="assets\water.png" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="KeyboardController.h" />
     <ClInclude Include="src\ECS\Components.h" />
     <ClInclude Include="src\ECS\ECS.h" />
     <ClInclude Include="src\ECS\TransformComponent.h" />
